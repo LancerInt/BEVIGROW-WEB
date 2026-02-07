@@ -1,4 +1,5 @@
 /* css/styles.css (FULL) */
+
 :root {
   --forest: #1f3b2c;
   --sage: #2c533b;
@@ -64,15 +65,19 @@ body {
   object-fit: cover;
   z-index: 0;
 }
-
-/* .hero-overlay {
+/* fs{
+  margin-top: 500px;
+} */
+/*
+.hero-overlay {
   position: absolute;
   inset: 0;
   background:
     linear-gradient(115deg, rgba(24, 46, 34, 0.82), rgba(92, 60, 34, 0.70)),
     radial-gradient(circle at 85% 20%, rgba(201, 162, 39, 0.22), transparent 45%);
   z-index: 1;
-} */
+}
+*/
 
 .hero-content {
   position: relative;
@@ -94,8 +99,9 @@ body {
     radial-gradient(circle at 90% 20%, rgba(201, 162, 39, 0.14), transparent 45%),
     linear-gradient(180deg, #fffdf6 0%, #f2ede2 100%);
 }
+
 #enquiry-form {
-  margin-top: -200px;
+  margin-top: 50px;
 }
 
 /* TITLES */
@@ -118,7 +124,8 @@ body {
 }
 
 /* CARDS */
-/* .card-custom {
+/*
+.card-custom {
   border: none;
   width: 80%;
   border-radius: 8px;
@@ -126,7 +133,8 @@ body {
   box-shadow: 0 16px 40px rgba(31, 59, 44, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(31, 59, 44, 0.08);
-} */
+}
+*/
 
 /* PRODUCTS CONTAINER */
 .cont {
@@ -136,7 +144,6 @@ body {
   gap: 32px;
   max-width: 1100px;
   margin-top: -300px;
-  /* padding: 20px;  */
 }
 
 /* INDIVIDUAL CARD WRAPPER */
@@ -168,7 +175,6 @@ body {
     max-width: 100%;
   }
 }
-
 
 .card-custom:hover {
   transform: translateY(-6px);
@@ -227,11 +233,9 @@ body {
   letter-spacing: 0.4px;
   text-transform: uppercase;
   text-decoration: none;
-
   color: #0f1010;
   background: linear-gradient(120deg, #e8f6ee, #ffffff);
   border: 1px solid rgba(31, 59, 44, 0.25);
-
   transition: all 0.25s ease;
   box-shadow: 0 8px 20px rgba(31, 59, 44, 0.12);
 }
@@ -268,6 +272,7 @@ body {
     radial-gradient(circle at 10% 10%, rgba(95, 191, 106, 0.18), transparent 45%),
     rgba(31, 59, 44, 0.03);
 }
+
 .cont1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
@@ -278,21 +283,30 @@ body {
   align-items: stretch;
 }
 
-.herop{
-  margin-top: -300px;
+.herop {
+  margin-top: -800px;
 }
 
-.hercon{
+.hercon {
   margin-top: -200px;
 }
-
 
 .min-vh-75 {
   min-height: 75vh;
 }
 
+/*
 .con1 {
   margin-top: -260px;
+}
+*/
+
+.cb {
+  margin-bottom: 500px;
+}
+
+.map {
+  margin-bottom: 500px;
 }
 
 .con2 {
@@ -303,11 +317,7 @@ body {
   position: relative;
   width: 100%;
   color: white;
-
-  /* KEEP OLD HEIGHT FEEL */
   min-height: 200px;
-
-  /* FULL-WIDTH BACKGROUND IMAGE */
   background-image: url("../images/img4.jpg");
   background-size: cover;
   background-position: center;
@@ -335,11 +345,13 @@ body {
   z-index: 2;
 }
 
-/* .product-card{
+/*
+.product-card {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
+*/
 
 /* MOBILE */
 @media (max-width: 767px) {

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Submit a BEVIGROW export or bulk enquiry for coffee and spices from Yercaud, India." />
   <title>Export / Bulk Enquiry | BEVIGROW</title>
+  <link rel="icon" href="images/bevigrow-favicon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,83 +25,49 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-light">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-      <img src="images/main_logo.png" alt="BEVIGROW logo" height="48">
+      <img src="images/logo.png" alt="BEVIGROW logo" height="48">
     </a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bevigrwNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="bevigrwNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
         <li class="nav-item"><a class="nav-link active" href="export.html">Enquiry</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- HERO -->
-<!-- <section class="hero py-5">
-  <div class="container py-4">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-5">
-       
+<section class="hero1">
+  <div class="heroarea container">
+    <div class="row justify-content-center text-center">
+      <div class="hero-con col-lg-8 hero-content-bg">
+        <span class="badge badge-custom rounded-pill mb-3 d-inline-block">Export / Bulk Enquiry</span>
+        <h1 class="display-6 fw-bold text-white">Let’s plan your next shipment.</h1>
+        <p class="lead mt-3 text-white">Bulk & export solutions for premium coffee and spices.</p>
       </div>
-      <div class="col-lg-7">
-        <span class="badge badge-custom rounded-pill mb-3">Export / Bulk Enquiry</span>
-        <h1 class="display-6 fw-bold">Let’s plan your next shipment.</h1>
-        <p class="lead">Bulk & export solutions for premium coffee and spices.</p>
-        <a href="#enquiry-form" class="btn btn-light">Enquiry Form</a>
-      </div>
-    </div>
-  </div>
-</section> -->
-<section class="hero1 py-5">
-  <div class="container py-4">
-    <div class="row justify-content-center align-items-center min-vh-30">
-
-      <!-- CENTERED CONTENT -->
-      <div class="col-lg-7 text-center hero-content-bg">
-
-        <span class="badge badge-custom rounded-pill mb-3 d-inline-block">
-          Export / Bulk Enquiry
-        </span>
-
-        <h1 class="display-6 fw-bold">
-          Let’s plan your next shipment.
-        </h1>
-
-        <p class="lead mt-3">
-          Bulk & export solutions for premium coffee and spices.
-        </p>
-<!-- 
-        <a href="#enquiry-form" class="btn btn-light mt-4">
-          Enquiry Form
-        </a> -->
-
-      </div>
-
     </div>
   </div>
 </section>
 
-
-
 <!-- FORM -->
 <section class="py-5" id="enquiry-form">
-  <div class="container">
-    <div class="con2 row justify-content-center">
+  <div class="fs container">
+    <div class="row justify-content-center">
       <div class="col-lg-8">
-        <h2>Enquiry Form</h2>
+        <h2 class="section-title mb-3">Enquiry Form</h2>
 
-        <form
-          class="card card-custom p-4"
-          action="https://api.web3forms.com/submit"
-          method="POST">
+        <form class="card card-custom p-4"
+              action="https://api.web3forms.com/submit"
+              method="POST">
 
-          <!-- Web3Forms -->
           <input type="hidden" name="access_key" value="0f945160-fc9a-48a6-ba9d-8548da0134f0">
           <input type="hidden" name="subject" value="New Export Enquiry - BEVIGROW">
           <input type="hidden" name="from_name" value="BEVIGROW Website">
@@ -110,27 +77,27 @@
 
             <div class="col-md-6">
               <label class="form-label">Name</label>
-              <input type="text" name="name" class="form-control" placeholder="Your full name" required>
+              <input type="text" name="name" class="form-control" required>
             </div>
 
             <div class="col-md-6">
               <label class="form-label">Company</label>
-              <input type="text" name="company" class="form-control" placeholder="Company name" required>
+              <input type="text" name="company" class="form-control" required>
             </div>
 
             <div class="col-md-6">
               <label class="form-label">Country</label>
-              <input type="text" name="country" class="form-control" placeholder="Country" required>
+              <input type="text" name="country" class="form-control" required>
             </div>
 
             <div class="col-md-6">
               <label class="form-label">Email</label>
-              <input type="email" name="email" class="form-control" placeholder="name@company.com" required>
+              <input type="email" name="email" class="form-control" required>
             </div>
 
             <div class="col-md-6">
               <label class="form-label">Phone</label>
-              <input type="tel" name="phone" class="form-control" placeholder="+91 ..." required>
+              <input type="tel" name="phone" class="form-control" required>
             </div>
 
             <div class="col-md-6">
@@ -148,25 +115,64 @@
 
             <div class="col-md-6">
               <label class="form-label">Quantity</label>
-              <input type="text" name="quantity" class="form-control" placeholder="e.g., 2 tons" required>
+              <input type="text" name="quantity" class="form-control" required>
             </div>
 
             <div class="col-12">
               <label class="form-label">Message</label>
-              <textarea name="message" class="form-control" rows="4"
-                placeholder="Share your specifications" required></textarea>
+              <textarea name="message" class="form-control" rows="4" required></textarea>
             </div>
 
             <div class="col-12 text-center">
-              <button type="submit" class="btn btn-primary btn-lg mt-2">
-                Send Enquiry
-              </button>
+              <button type="submit" class="btn btn-primary btn-lg mt-2">Send Enquiry</button>
             </div>
 
           </div>
         </form>
-
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT HERO -->
+<section class="py-4 text-center">
+  <div class="container">
+    <span class="badge badge-custom rounded-pill mb-3">Contact</span>
+    <h2 class="fw-bold section-title">Connect with BEVIGROW.</h2>
+    <p class="lead mx-auto" style="max-width: 680px;">We welcome export and bulk enquiries worldwide.</p>
+  </div>
+</section>
+
+<!-- CONTACT + MAP -->
+<section class="con1">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+
+      <div class="col-lg-5">
+        <div class="card card-custom h-100">
+          <div class="card-body">
+            <h5 class="card-title">Contact Details</h5>
+            <p><strong>Phone:</strong> +91 9962284842</p>
+            <p><strong>Email:</strong> bevigrow@gmail.com</p>
+            <p><strong>Address:</strong> Beverley Estate, Yercaud – 636601</p>
+            <p><strong>Website:</strong> www.bevigrow.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="card card-custom h-100">
+          <div class="card-body">
+            <h5 class="card-title">Map</h5>
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://maps.google.com/maps?q=Yercaud%20636601&z=12&output=embed"
+                loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -175,7 +181,7 @@
 <footer class="footer py-4">
   <div class="container text-center">
     <p class="mb-1">📞 +91 9962284842 | ✉️ bevigrow@gmail.com</p>
-    <small>© 2024 BEVIGROW. All rights reserved.</small>
+    <small>© 2026 BEVIGROW. All rights reserved.</small>
   </div>
 </footer>
 

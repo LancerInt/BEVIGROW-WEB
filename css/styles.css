@@ -146,6 +146,14 @@ body {
   margin-top: -300px;
 }
 
+.contcen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: -300px;
+}
+
 /* INDIVIDUAL CARD WRAPPER */
 .product-card {
   flex: 1;
@@ -179,6 +187,11 @@ body {
 .card-custom:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 42px rgba(31, 59, 44, 0.2);
+}
+
+.carddis{
+  text-decoration: none;
+  color: black;
 }
 
 /* PRODUCT IMAGE AREA (FIXED) */
@@ -273,6 +286,7 @@ body {
     rgba(31, 59, 44, 0.03);
 }
 
+
 .cont1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
@@ -304,9 +318,12 @@ body {
 
 /*
 .con1 {
-  margin-top: -260px;
+  margin-top: 260px;
 }
 */
+.cinfo{
+  margin-bottom: 800px;
+}
 
 .cb {
   margin-bottom: 500px;
@@ -329,6 +346,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: -85px;
+
 }
 
 .hero1 span {
@@ -360,6 +379,38 @@ body {
 }
 */
 
+/* ===== FORCE ENQUIRE BUTTON TO BOTTOM OF CARD ===== */
+
+/* Make each card a full-height flex column */
+.product-card .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Allow card body to grow and push button down */
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Keep all images same height (important for equal cards) */
+.product-card .product-img img {
+  height: 260px;
+  object-fit: cover;
+}
+
+/* Push Enquire button to bottom */
+.product-card .product-btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+.cinfo{
+   margin-bottom: 250px;
+}
+
 /* MOBILE */
 @media (max-width: 767px) {
   .hero,
@@ -375,3 +426,4 @@ body {
     width: 70%;
   }
 }
+

@@ -18,6 +18,60 @@
 
   <!-- Custom CSS -->
   <link href="./css/styles.css" rel="stylesheet">
+  <style>
+@media (max-width: 767px) {
+
+  /* Remove negative spacing on mobile */
+  .herosize { 
+    margin-top: 0 !important; 
+    margin-bottom: 0 !important; 
+  }
+
+  .herosize1 { 
+    margin-top: 0 !important; 
+  }
+
+  /* Product images */
+  .product-img img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  /* Hero buttons full width */
+  .hero .btn {
+    width: 80%;
+    margin-left: 40px;
+  }
+
+  /* TEXT ALIGNMENT (IMPORTANT) */
+  .hero,
+  .hero h1,
+  .hero p,
+  .card,
+  .card-title,
+  .card-text {
+    text-align: center !important;
+  }
+
+  /* Improve readability on mobile */
+  .card-title {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* Better spacing inside cards */
+  .card-body {
+    padding: 16px !important;
+  }
+}
+</style>
+
+
 </head>
 
 <body>
@@ -61,7 +115,7 @@
             BEVIGROW brings the freshness of highland estates to global buyers with premium coffee and spices.
           </p>
           <div class="d-flex gap-3 flex-wrap">
-            <a href="coffee.html" class="btn btn-light">View Products</a>
+            <a href="product.html" class="btn btn-light">View Products</a>
             <a href="export.html" class="btn btn-outline-light">Export Enquiry</a>
           </div>
         </div>
@@ -83,7 +137,7 @@
         <div class="col-lg-6">
           <h2 class="section-title">Estate-Grown Excellence</h2>
           <p>
-            Rooted in the misty hills , BEVIGROW sources coffee and spices directly from estate partners.
+            Rooted in the misty hills , BEVIGROW coffee and spices directly from estate partners.
           </p>
         </div>
       </div>
@@ -103,7 +157,7 @@
           </a>
         </div>
         <div class="col-md-4">
-          <a class="container carddis " href="spices.html">
+          <a class="container carddis " href="crispy.html">
             <div class="card card-custom p-4">
               <h5>Spice Products</h5>
               <p>sPepper, cardamom, cinnamon, turmeric & more.</p>

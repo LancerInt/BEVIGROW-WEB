@@ -53,6 +53,7 @@ body {
   min-height: 80vh;
 }
 
+
 .hero-main {
   color: var(--sand);
 }
@@ -371,6 +372,18 @@ body {
   z-index: 2;
 }
 
+.chgsize{
+  margin-bottom:-290px;
+  margin-top: -50px;
+}
+
+.herosize{
+  margin-bottom:-20px;
+  margin-top: -50px;
+}
+.herosize1{
+  margin-top: -380px;
+}
 /*
 .product-card {
   display: flex;
@@ -425,5 +438,54 @@ body {
   .hero .btn {
     width: 70%;
   }
+   .hero11 {
+   position: relative;
+    overflow: hidden;
+    min-height: 20vh; 
+  } 
 }
 
+/* ========== EXTRA MOBILE RESPONSIVE FIX (ADD AT END) ========== */
+@media (max-width: 767px) {
+
+  /* Remove negative margins that break mobile layout */
+  .herop,
+  .hercon,
+  .cont,
+  .contcen,
+  .hero1,
+  .chgsize,
+  .herosize,
+  .herosize1 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .cont .proc-1 {
+    margin-top: -200px;
+  }
+
+  /* Make product grid stack properly */
+  .cont1 {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 20px 12px !important;
+  }
+
+  /* Make card full width on mobile */
+  .product-card {
+    max-width: 100% !important;
+  }
+
+  /* Reduce image height on mobile */
+  .product-card .product-img img {
+    height: 220px !important;
+  }
+
+  /* Prevent too much spacing at bottom */
+  .cb,
+  .map,
+  .cinfo {
+    margin-bottom: 0 !important;
+  }
+}

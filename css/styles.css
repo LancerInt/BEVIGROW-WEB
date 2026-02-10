@@ -46,6 +46,11 @@ body {
   color: #8C5A11;
 }
 
+.navbar img{
+   height: 40px;       /* desktop size */
+  width: auto;
+}
+
 /* HERO */
 .hero {
   position: relative;
@@ -423,6 +428,13 @@ body {
 .cinfo{
    margin-bottom: 250px;
 }
+.conmap{
+  margin-bottom: -10px;
+  
+}
+.contact{
+  margin-bottom: 300px;
+}
 
 /* MOBILE */
 @media (max-width: 767px) {
@@ -471,6 +483,12 @@ body {
     gap: 18px !important;
     padding: 20px 12px !important;
   }
+
+  @media (max-width: 767px) {
+  .navbar img {
+    height:40px;     /* smaller on mobile */
+  }
+}
 
   /* Make card full width on mobile */
   .product-card {
